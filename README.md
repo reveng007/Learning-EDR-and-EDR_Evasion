@@ -24,7 +24,7 @@ I will be uploading all the codes which I created with the help either opensourc
 14. [@ZeroMemoryEx](https://twitter.com/ZeroMemoryEx)
 15. [@NinjaParanoid](https://twitter.com/NinjaParanoid)
 16. [Windows-Internals](https://github.com/Faran-17/Windows-Internals) and [MA](https://chrollo-dll.gitbook.io/chrollo/security-blogs/malware-analysis-and-re/wannacry-ransomware) by [@Chrollo_l33t](https://twitter.com/Chrollo_l33t)
-17. [trustedsec](https://www.trustedsec.com/)
+17. [trustedsec](https://www.trustedsec.com/) by [@TrustedSec](https://twitter.com/TrustedSec)
 18. [@spotheplanet](https://twitter.com/spotheplanet)
 19. [@spotheplanet](https://twitter.com/spotheplanet)
 20. [@C5pider](https://twitter.com/C5pider)
