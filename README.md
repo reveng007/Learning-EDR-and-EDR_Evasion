@@ -5,11 +5,14 @@ I will be uploading all the codes which I created with the help of either open-s
 
 #### Schematic:
 1. SSN Sorting and Patching
-2. Indirect Syscall
-3. Indirect Dynamic Syscall
-4. Memory Scanning Evasion
-5. Advanced Module Stomping
-6. ...
+2. Direct Syscall: Blog by [@VirtualAllocEx](https://twitter.com/VirtualAllocEx)\
+-> i. https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls (Concept, as well as Code Snippet [Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls/tree/main/Direct_Syscalls_Create_Thread), Exceptionally well Explained!)
+   ii. Hell's Gate: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) -> ...
+4. Indirect Syscall
+5. Indirect Dynamic Syscall
+6. Memory Scanning Evasion
+7. Advanced Module Stomping
+8. ...
 
 ### Curtesy To:
 > Not A Complete list -> I will be adding rest, while I continue my learning\
