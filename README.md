@@ -4,7 +4,7 @@ I will be uploading all the codes which I created with the help of either open-s
 ### Learning Curve:
 
 #### Schematic:
-1. Direct Syscall -> SSN Sorting and Patching
+1. SSN Sorting and Patching
 2. Indirect Syscall
 3. Indirect Dynamic Syscall
 4. Memory Scanning Evasion
