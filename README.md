@@ -4,7 +4,7 @@ I will be uploading all the codes which I created with the help of either open-s
 ### Learning Curve:
 
 #### Schematic:
-1. SSN Sorting and Patching -> Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for his Project: [UnhookingPatch](https://github.com/TheD1rkMtr/UnhookingPatch)
+1. Patching makes it more like Direct Syscall: SSN Sorting and Patching -> Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for his Project: [UnhookingPatch](https://github.com/TheD1rkMtr/UnhookingPatch)
 2. Direct Syscall: Blog by [@VirtualAllocEx](https://twitter.com/VirtualAllocEx)\
 -> i. https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls (Concept, as well as Code Snippet [Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls/tree/main/Direct_Syscalls_Create_Thread), Exceptionally well Explained!)
    ii. Hell's Gate: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) -> ...
