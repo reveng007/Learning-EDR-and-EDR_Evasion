@@ -1,10 +1,10 @@
 # Learning-EDR-and-EDR_Evasion
-I will be uploading all the codes which I created with the help either opensource projects or blogs. This is a step by step EDR learning path for me.
+I will be uploading all the codes which I created with the help of either open-source projects or blogs. This is a step-by-step EDR learning path for me.
 
 ### Learning Curve:
 
 #### Schematic:
-1. SSN Sorting and Patching
+1. Direct Syscall -> SSN Sorting and Patching
 2. Indirect Syscall
 3. Indirect Dynamic Syscall
 4. Memory Scanning Evasion
@@ -14,7 +14,7 @@ I will be uploading all the codes which I created with the help either opensourc
 ### Curtesy To:
 > Not A Complete list -> I will be adding rest, while I continue my learning\
 > and Please, they are not listed based on anything!\
-> => All have done a great Contribution to OpenSource Community!
+> => All have made a great **contribution** to OpenSource Community!
 1. [@SEKTOR7net](https://twitter.com/SEKTOR7net)
 2. [@zodiacon](https://twitter.com/zodiacon)
 3. [@_winterknife_](https://twitter.com/_winterknife_)
