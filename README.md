@@ -6,29 +6,36 @@ I will be uploading all the codes which I created with the help of either open-s
 #### Schematic WorkFlow:
 1. ***SSN Sorting and Patching***:\
    i. Neither, Direct Syscall nor Indirect Syscall, but can be **Weaponised** to do both with **SSN Sorting**.\
-   Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for his Project: [UnhookingPatch](https://github.com/TheD1rkMtr/UnhookingPatch)\
+   Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for his Project: [UnhookingPatch](https://github.com/TheD1rkMtr/UnhookingPatch)
+   
    ii. My Implementation of **SSN Sorting and Patching**:\
    ***(SSN + syscall address Sorting via Halo's Gate + patching + SystemFunction033 Nt Api RC4 encrypted shellcode decryption directly from process memory + EnumThreadWindows)*** : [link](https://github.com/reveng007/Learning-EDR-and-EDR_Evasion/tree/main/SSN_Sort_patch_Hooked_syscalls/project_vs_2022)
    
 3. _**Direct Dynamic Syscall (Not Hard Coded Stub)**_:\
-   Blog by [@VirtualAllocEx](https://twitter.com/VirtualAllocEx)\
+   Blog by [@VirtualAllocEx](https://twitter.com/VirtualAllocEx):\
       i. https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls (Concept, as well as Code Snippet : [Whole Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls/tree/main/Direct_Syscalls_Create_Thread),\
-   Exceptionally well Explained!)\
-      ii. _**Hell's Gate**_: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) -> ...
-4. _**Indirect Syscall (.C Version)**_ :\
-   i. https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls (https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls)
+   Exceptionally well Explained!)
    
-5. _**Indirect Dynamic Syscall**_:\
+      ii. _**Hell's Gate**_: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) -> ...
+
+      iii. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/)\
+      Whole Code: [here](https://github.com/trickster0/TartarusGate).
+   
+5. _**Indirect Syscall (.C Version)**_ :\
+   i. Blog: https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls : [Source Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls)
+   
+6. _**Indirect Dynamic Syscall**_:\
     i. _**HellHall (.C Version)**_:\
-      https://github.com/Maldev-Academy/HellHall (Hells Gate + Indirect Syscall)\
+      https://github.com/Maldev-Academy/HellHall (Hells Gate + Indirect Syscall)
+   
     ii. ***[D1rkLdr](https://github.com/TheD1rkMtr/D1rkLdr/)*** and ***[HadesLdr](https://github.com/CognisysGroup/HadesLdr)***:\
      ***SSN + syscall address Sorting via Halo's Gate + Indirect Syscall + API Hashing + Stageless shellcode*** by [@D1rkMtr](https://twitter.com/D1rkMtr)
 
    iii. My Implementation of Indirect Dynamic Syscall.
    
-7. Memory Scanning Evasion
-8. Advanced Module Stomping
-9. ...
+8. Memory Scanning Evasion
+9. Advanced Module Stomping
+10. ...
 
 ### Curtesy To:
 > Not A Complete list -> I will be adding rest, while I continue my learning\
