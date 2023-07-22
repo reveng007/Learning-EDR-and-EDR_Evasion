@@ -23,12 +23,15 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
       i. https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls (Concept, as well as Code Snippet : [Whole Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls/tree/main/Direct_Syscalls_Create_Thread),\
    Exceptionally well Explained!)
    
-      ii. _**Hell's Gate**_: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) -> ...
+      ii. _**Hell's Gate**_: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) : _Lookup syscall by first opcodes_\
+      -> ...
 
-      iii. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/)\
+      iii. _**Halos Gate**_: _Lookup syscall by first opcodes and search nearby if first instruction is a JMP_
+   
+      iv. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/) : _Lookup syscall by first opcodes and search nearby if first or third instruction is a JMP_\
       Whole Code: [here](https://github.com/trickster0/TartarusGate).
 
-      iv. ***FreshyCalls****:\
+      v. ***FreshyCalls****: _Lookup syscall by name (start with Nt and not Ntdll), sort addresses to retrieve syscall number_\
       Source Code: [here](https://github.com/crummie5/FreshyCalls)\
       Blog Post: [here](https://www.crummie5.club/freshycalls/)
 
