@@ -23,15 +23,19 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
       i. https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls (Concept, as well as Code Snippet : [Whole Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls/tree/main/Direct_Syscalls_Create_Thread),\
    Exceptionally well Explained!)
    
-      ii. _**Hell's Gate**_: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) : _Lookup syscall by first opcodes_\
+      ii. _**Hell's Gate**_: [Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) :\
+      Mechanism: _Lookup syscall by first opcodes_\
       -> ...
 
-      iii. _**Halos Gate**_: _Lookup syscall by first opcodes and search nearby if first instruction is a JMP_
+      iii. _**Halos Gate**_:\
+      Mechanism: _Lookup syscall by first opcodes and search nearby if first instruction is a JMP_
    
-      iv. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/) : _Lookup syscall by first opcodes and search nearby if first or third instruction is a JMP_\
+      iv. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/) :\
+      Mechanism: _Lookup syscall by first opcodes and search nearby if first or third instruction is a JMP_\
       Whole Code: [here](https://github.com/trickster0/TartarusGate).
 
-      v. ***FreshyCalls****: _Lookup syscall by name (start with Nt and not Ntdll), sort addresses to retrieve syscall number_\
+      v. ***FreshyCalls****:\
+      Mechanism: _Lookup syscall by name (start with Nt and not Ntdll), sort addresses to retrieve syscall number_\
       Source Code: [here](https://github.com/crummie5/FreshyCalls)\
       Blog Post: [here](https://www.crummie5.club/freshycalls/)
 
@@ -44,12 +48,15 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
    
 6. _**Indirect Dynamic Syscall**_:\
     i. _**HellHall (.C Version)**_:\
-      https://github.com/Maldev-Academy/HellHall (Hells Gate + Indirect Syscall)
+      Mechanism: _Hells Gate + Indirect Syscall_
+      https://github.com/Maldev-Academy/HellHall
    
     ii. ***[D1rkLdr](https://github.com/TheD1rkMtr/D1rkLdr/)*** and ***[HadesLdr](https://github.com/CognisysGroup/HadesLdr)***:\
      ***SSN + syscall address Sorting via Halo's Gate + Indirect Syscall + API Hashing + Stageless shellcode*** by [@D1rkMtr](https://twitter.com/D1rkMtr)
 
-   iii. My Implementation of Indirect Dynamic Syscall.
+   iii. My Implementation of Indirect Dynamic Syscall.\
+   ***SSN + syscall address Sorting via Halo's Gate + Checks if the first, third, eighth, tenth, and twelfth instruction is a JMP (Modified TartarusGate) + ...***\
+   _Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for Modified TartarusGate approach!_
    
 8. Memory Scanning Evasion
 9. Advanced Module Stomping
