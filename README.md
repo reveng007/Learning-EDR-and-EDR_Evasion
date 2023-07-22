@@ -1,6 +1,13 @@
 # Learning-EDR-and-EDR_Evasion
 I will be uploading all the codes which I created with the help of either open-source projects or blogs. This is a step-by-step EDR learning path for me.
 
+------
+
+### NOTE:
+Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by [x42en](https://github.com/x42en)
+Blog to look at: [freshycalls](https://www.crummie5.club/freshycalls/)
+------------
+
 ## Learning Curve:
 
 #### Schematic WorkFlow:
@@ -20,6 +27,14 @@ I will be uploading all the codes which I created with the help of either open-s
 
       iii. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/)\
       Whole Code: [here](https://github.com/trickster0/TartarusGate).
+
+      iv. ***FreshyCalls****:\
+      Source Code: [here](https://github.com/crummie5/FreshyCalls)\
+      Blog Post: [here](https://www.crummie5.club/freshycalls/)
+
+      Comparative table taken from Cyberbit's blog (link doesn't work: [link](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)):
+
+![image](https://github.com/reveng007/Learning-EDR-and-EDR_Evasion/assets/61424547/804a9d2b-ee7f-4bf5-a666-afa621c9e04d)
    
 5. _**Indirect Syscall (.C Version)**_ :\
    i. Blog: https://redops.at/en/blog/direct-syscalls-vs-indirect-syscalls : [Source Code](https://github.com/VirtualAlllocEx/Direct-Syscalls-vs-Indirect-Syscalls)
