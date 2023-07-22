@@ -5,7 +5,6 @@ I will be uploading all the codes which I created with the help of either open-s
 
 ### NOTE:
 Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by [x42en](https://github.com/x42en)
-Blog to look at: [freshycalls](https://www.crummie5.club/freshycalls/)
 
 ------------
 
@@ -33,7 +32,7 @@ Blog to look at: [freshycalls](https://www.crummie5.club/freshycalls/)
       Source Code: [here](https://github.com/crummie5/FreshyCalls)\
       Blog Post: [here](https://www.crummie5.club/freshycalls/)
 
-      Comparative table taken from Cyberbit's blog (link doesn't work: [link](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)):
+      Comparative table taken from Cyber bit's blog (link doesn't work: [link](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)):
 
 ![image](https://github.com/reveng007/Learning-EDR-and-EDR_Evasion/assets/61424547/804a9d2b-ee7f-4bf5-a666-afa621c9e04d)
    
