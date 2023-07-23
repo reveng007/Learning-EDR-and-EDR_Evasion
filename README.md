@@ -30,11 +30,13 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
       iii. _**Halos Gate**_:\
       Mechanism: _Lookup syscall by first opcodes and search nearby if first instruction is a JMP_
    
-      iv. ***TartarusGate***: Modified Halos Gate Implementation: Why needed? Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/) :\
+      iv. ***TartarusGate***: Modified Halos Gate Implementation:\
+      Why needed?\
+      Cause: Not all EDRs hook the same way: More here: [Blog](https://trickster0.github.io/posts/Halo's-Gate-Evolves-to-Tartarus-Gate/)\
       Mechanism: _Lookup syscall by first opcodes and search nearby if first or third instruction is a JMP_\
       Whole Code: [here](https://github.com/trickster0/TartarusGate).
 
-      v. ***FreshyCalls****:\
+      v. ***FreshyCalls***:\
       Mechanism: _Lookup syscall by name (start with Nt and not Ntdll), sort addresses to retrieve syscall number_\
       Source Code: [here](https://github.com/crummie5/FreshyCalls)\
       Blog Post: [here](https://www.crummie5.club/freshycalls/)
@@ -54,9 +56,16 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
     ii. ***[D1rkLdr](https://github.com/TheD1rkMtr/D1rkLdr/)*** and ***[HadesLdr](https://github.com/CognisysGroup/HadesLdr)***:\
      ***SSN + syscall address Sorting via Halo's Gate + Indirect Syscall + API Hashing + Stageless shellcode*** by [@D1rkMtr](https://twitter.com/D1rkMtr)
 
-   iii. My Implementation of Indirect Dynamic Syscall.\
-   ***SSN + syscall address Sorting via Halo's Gate + Checks if the first, third, eighth, tenth, and twelfth instruction is a JMP (Modified TartarusGate) + ...***\
-   _Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for Modified TartarusGate approach!_
+      _Thanks to [@D1rkMtr](https://twitter.com/D1rkMtr) for Modified TartarusGate approach!_
+   
+   iii. My Implementation of Indirect Dynamic Syscall (Basic): [Here](https://github.com/reveng007/Learning-EDR-and-EDR_Evasion/tree/main/Indirect_Syscall)\
+      Mechanism: ***SSN + syscall address Sorting via Halo's Gate + Checks if the first, third, eighth, tenth, and twelfth instruction is a JMP (Modified TartarusGate) + Indirect Syscall***
+
+   iv. My Implementation of Indirect Dynamic Syscall (Basic + Early Bird): Coming Soon...
+
+   v. My Implementation of Indirect Dynamic Syscall (Basic + Early Bird + API resolve from TEB): Coming Soon...
+
+   vi. My Implementation of Indirect Dynamic Syscall (Basic + Early Bird + API resolve from TEB + API hashing): Coming Soon...
    
 8. Memory Scanning Evasion
 9. Advanced Module Stomping
