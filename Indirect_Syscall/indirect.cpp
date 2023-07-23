@@ -353,7 +353,7 @@ int main()
 	// 1. Top of the stack will indeed show ntoskrnl.exe as 
 	// => ProcessHacker has a Driver inbuilt which will see beyond the call to ntdll and into ntoskrnl (kernel)
 	// 
-	// 2. Compared with legit notepad, stack looks identical 
+	// 2. Compared with legit cmd process, stack looks identical 
 	//		i. => Nt functions are present at the top of the Stack (Leaving, the "ntoskrnl.exe is on TOP of CallStack" factor)
 	// 
 	//		ii. => Nt functions are retrieved from ntdll itself, NOT from implant process 
