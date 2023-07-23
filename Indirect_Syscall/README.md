@@ -14,7 +14,7 @@ Directly via VS compiler:
 
 ![image](https://github.com/reveng007/MaldevTechniques/assets/61424547/b845bd5b-9ca2-4a73-aa04-16930c7a1d5e)
 
-#### Process to Check the Thread Stack:
+#### Procedure to Check the Thread Stack:
 1. Just Uncomment this (`NtDelayExecution Snippet`) and compile -> Execute and open the implant process in process hacker -> check thread Stack -> It's totally Legit 
 ```
 1. Top of the stack will indeed show ntoskrnl.exe as 
