@@ -130,6 +130,13 @@ EXTERN_C NTSTATUS NtWaitForSingleObject(
 //unsigned char sNtdll[] = { 'n', 't', 'd', 'l', 'l', '.', 'd', 'l', 'l', 0x0 };
 
 
+void int2hex(int SystemCall)
+{
+	char hex_string[20];
+	sprintf(hex_string, "%X", SystemCall); //convert number to hex
+	printf("[+] Sorted SSN %s\n", hex_string);
+}
+
 // Sektor7: HalosGate and BRc4 Blog: https://bruteratel.com/release/2022/01/08/Release-Warfare-Tactics/
 // SystemCall Stub: First 4 bytes
 // opcode: \x4c\x8b\xd1\xb8...
@@ -163,7 +170,7 @@ WORD SortSSN(LPVOID ntapiaddr)
 		BYTE low = *((PBYTE)ntapiaddr + 4);
 		SystemCall = (high << 8) | low;
 
-		printf("[+] Sorted SSN %d\n", SystemCall);
+		int2hex(SystemCall);
 
 		return SystemCall;
 	}
@@ -192,7 +199,7 @@ WORD SortSSN(LPVOID ntapiaddr)
 				BYTE low = *((PBYTE)ntapiaddr + 4 + idx * DOWN);
 				SystemCall = (high << 8) | low - idx;
 
-				printf("[+] Sorted SSN %d\n", SystemCall);
+				int2hex(SystemCall);
 
 				return SystemCall;
 			}
@@ -209,7 +216,7 @@ WORD SortSSN(LPVOID ntapiaddr)
 				BYTE low = *((PBYTE)ntapiaddr + 4 + idx * UP);
 				SystemCall = (high << 8) | low + idx;
 
-				printf("[+] Sorted SSN %d\n", SystemCall);
+				int2hex(SystemCall);
 
 				return SystemCall;
 			}
