@@ -47,6 +47,13 @@
 	sysNtWaitForSingleObject endp
 
 
+	;sysNtDelayExecution proc
+	;				mov r10, rcx
+	;				mov ax, SSN
+	;				jmp	qword ptr syscallAddr
+	;				ret
+	;sysNtDelayExecution endp
+
 	sysNtQueueApcThread proc
 				mov r10, rcx
 				mov ax, SSN

