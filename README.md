@@ -72,7 +72,12 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
 10. ...
 
 ### Admin Priv (PostExp):
-1. Blinding EventLog: []()
+1. Blinding EventLog + Allowing SeDebugPrivilege:
+   links:
+   - [rto-win-evasion](https://institute.sektor7.net/rto-win-evasion) by [@SEKTOR7net](https://twitter.com/Sektor7Net)
+   - [Phant0m](https://github.com/hlldz/Phant0m) by [@hlldz](https://twitter.com/hlldz)
+   - [disabling-windows-event-logs-by-suspending-eventlog-service-threads](https://www.ired.team/offensive-security/defense-evasion/disabling-windows-event-logs-by-suspending-eventlog-service-threads) by [@spotheplanet](https://twitter.com/spotheplanet)
+   - Source Code: [Suspending/Killing EventLog Service Threads hosted by responsible svchost.exe](https://github.com/reveng007/Learning-EDR-and-EDR_Evasion/tree/main/BlindEventLog)
 
 ### Curtesy To:
 > Not A Complete list -> I will be adding rest, while I continue my learning\
