@@ -71,6 +71,9 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
 9. Advanced Module Stomping
 10. ...
 
+### Admin Priv (PostExp):
+1. Blinding EventLog: []()
+
 ### Curtesy To:
 > Not A Complete list -> I will be adding rest, while I continue my learning\
 > and Please, they are not listed based on anything!\
