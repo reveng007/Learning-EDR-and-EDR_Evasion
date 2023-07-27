@@ -61,9 +61,7 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
    iii. My Implementation of Indirect Dynamic Syscall (Basic): [Here](https://github.com/reveng007/Learning-EDR-and-EDR_Evasion/tree/main/Indirect_Syscall)\
       Mechanism: ***SSN + syscall address Sorting via Halo's Gate + Checks if the first, third, eighth, tenth, and twelfth instruction is a JMP (Modified TartarusGate) + Indirect Syscall***
 
-   iv. My Implementation of Indirect Dynamic Syscall (***Basic + Early Bird + API resolve from TEB***): Coming Soon...
-
-   v. My Implementation of Indirect Dynamic Syscall (***Basic + Early Bird + API resolve from TEB + API hashing***): Coming Soon...
+   iv. My Implementation of Indirect Dynamic Syscall (***Basic + Early Bird + API resolve from TEB + API hashing + EventLog Service Killing***): [DarkWidow](https://github.com/reveng007/DarkWidow)
 
    vi. My Implementation of Indirect Dynamic Syscall (***Basic + Early Bird ([Modified form](https://trickster0.github.io/posts/earlybird-apc-queue-injection-with-processstatechange-a-twist/)) + API resolve from TEB + API hashing***): Coming Soon...
    
