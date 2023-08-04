@@ -64,10 +64,21 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
    iv. My Implementation of Indirect Dynamic Syscall (***Basic + Early Bird + API resolve from TEB + API hashing + EventLog Service Killing***): [DarkWidow](https://github.com/reveng007/DarkWidow)
 
    vi. My Implementation of Indirect Dynamic Syscall (***Basic + Early Bird ([Modified form](https://trickster0.github.io/posts/earlybird-apc-queue-injection-with-processstatechange-a-twist/)) + API resolve from TEB + API hashing***): Coming Soon...
+
+7. _**Ntdlll Unhooking Collection**_:\
+   1.1. [1 - Unhooking NTDLL from disk](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/1%20-%20Unhooking%20NTDLL%20from%20disk): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
+   1.2. [1 - Unhooking NTDLL from disk (Indirect)](https://github.com/reveng007/MaldevTechniques/tree/main/3.Evasions/UnhookNtdlls/1%20-%20Unhooking%20NTDLL%20from%20disk%20(Indirect)/Unhook): My Implementation, made private.\
+   2. [2 - Unhooking NTDLL from KnownDlls](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/2%20-%20Unhooking%20NTDLL%20from%20KnownDlls): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
+   3. [3 - Unhooking NTDLL from Suspended Process](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/3%20-%20Unhooking%20NTDLL%20from%20Suspended%20Process): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
+   4.1. [4 - Unhooking NTDLL from remote server (fileless)](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/4%20-%20Unhooking%20NTDLL%20from%20remote%20server%20(fileless)): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
+   4.2. My Implementation of it: POC Version (Not Full weaponisation): [ReflectiveNtdll](https://github.com/reveng007/ReflectiveNtdll)
    
-8. Memory Scanning Evasion
-9. Advanced Module Stomping
-10. ...
+   
+9. Memory Scanning Evasion
+10. Advanced Module Stomping
+11. ...
+
+
 
 ### Admin Priv (PostExp):
 1. Blinding EventLog + Allowing SeDebugPrivilege:
