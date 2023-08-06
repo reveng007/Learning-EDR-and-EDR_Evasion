@@ -71,8 +71,8 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
    2. [2 - Unhooking NTDLL from KnownDlls](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/2%20-%20Unhooking%20NTDLL%20from%20KnownDlls): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
    3. [3 - Unhooking NTDLL from Suspended Process](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/3%20-%20Unhooking%20NTDLL%20from%20Suspended%20Process): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
    4.1. [4 - Unhooking NTDLL from remote server (fileless)](https://github.com/TheD1rkMtr/ntdlll-unhooking-collection/tree/main/Ntdll%20Unhooking/4%20-%20Unhooking%20NTDLL%20from%20remote%20server%20(fileless)): Done by [@D1rkMtr](https://twitter.com/D1rkMtr).\
-   4.2. My Implementation of it: POC Version (Not Full weaponisation): [ReflectiveNtdll](https://github.com/reveng007/ReflectiveNtdll)
-   
+   4.2. My Implementation of it: POC Version (Not Full weaponisation): [ReflectiveNtdll](https://github.com/reveng007/ReflectiveNtdll)\
+   5. [5 - Unhooking NTDLL on Remote Process (Shellycoat - Baptize Tainted Ntdll)](https://github.com/reveng007/AQUARMOURY/tree/master/Shellycoat): Done by [@_winterknife_](https://twitter.com/_winterknife_).
    
 9. Memory Scanning Evasion
 10. Advanced Module Stomping
