@@ -76,7 +76,10 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
    
 9. Memory Scanning Evasion
 10. Advanced Module Stomping
-11. ...
+11. Thread/Call Stack Spoofing:\
+  i. [behind-the-mask-spoofing-call-stacks-dynamically-with-timers](https://www.cobaltstrike.com/blog/behind-the-mask-spoofing-call-stacks-dynamically-with-timers)\
+12. Custom  Call Stack
+13. ...
 
 
 
