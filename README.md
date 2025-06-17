@@ -1,4 +1,4 @@
-# Learning-EDR-and-EDR_Evasion
+8# Learning-EDR-and-EDR_Evasion
 I will be uploading all the codes which I created with the help of either open-source projects or blogs. This is a step-by-step EDR learning path for me.
 
 ------
@@ -132,3 +132,4 @@ Syscall Implementation in Nim: [sysplant](https://github.com/x42en/sysplant) by 
 35. [@allevon412](https://twitter.com/allevon412)
 36. [@0xLegacyy](https://twitter.com/0xLegacyy)
 37. [@d_tranman](https://twitter.com/d_tranman)
+38. [@embee_research](https://x.com/embee_research)
