@@ -1,4 +1,4 @@
-8# Learning-EDR-and-EDR_Evasion
+# Learning-EDR-and-EDR_Evasion
 I will be uploading all the codes which I created with the help of either open-source projects or blogs. This is a step-by-step EDR learning path for me.
 
 ------
